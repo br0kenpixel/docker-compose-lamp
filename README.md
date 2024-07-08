@@ -23,6 +23,31 @@ As of now, we have several different PHP versions. Use appropriate php version a
 - 8.2.x
 - 8.3.x
 
+## Modifications
+- Disabled Redis
+- Disabled Xdebug
+
+## Commands
+Run the server:
+```sh
+docker compose up
+```
+or
+```sh
+docker compose up -d # Run in background
+```
+
+To stop the server:
+```sh
+$ docker compose down
+$ docker compose rm
+```
+
+To rebuild the server and start it:
+```sh
+docker compose up --no-deps --build
+```
+
 ## Installation
 
 - Clone this repository on your local computer
