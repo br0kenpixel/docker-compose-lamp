@@ -55,7 +55,7 @@ docker compose up --no-deps --build
 - Run the `docker compose up -d`.
 
 ```shell
-git clone https://github.com/sprintcube/docker-compose-lamp.git
+git clone https://github.com/br0kenpixel/docker-compose-lamp.git
 cd docker-compose-lamp/
 cp sample.env .env
 // modify sample.env as needed
