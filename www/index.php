@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
         <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/svg+xml">
         <link rel="stylesheet" href="/assets/css/bulma.min.css">
     </head>
+
     <body>
         <section class="hero is-medium is-info is-bold">
             <div class="hero-body">
@@ -34,7 +36,7 @@
                                     <?php
                                     $link = mysqli_connect("database", "root", $_ENV['MYSQL_ROOT_PASSWORD'], null);
 
-/* check connection */
+                                    /* check connection */
                                     if (mysqli_connect_errno()) {
                                         printf("MySQL connecttion failed: %s", mysqli_connect_error());
                                     } else {
@@ -67,9 +69,12 @@
             <div class="content has-text-centered">
                 <p>
                     <strong><a href="https://www.sprintcube.com" target="_blank">SprintCube</a></strong><br>
-                    The source code is released under the <a href="https://github.com/sprintcube/docker-compose-lamp/blob/master/LICENSE" target="_blank">MIT license</a>.
+                    The source code is released under the <a
+                        href="https://github.com/sprintcube/docker-compose-lamp/blob/master/LICENSE" target="_blank">MIT
+                        license</a>.
                 </p>
             </div>
         </footer>
     </body>
+
 </html>
