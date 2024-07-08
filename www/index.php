@@ -1,6 +1,6 @@
 <?php
 
-$DBuser = $_ENV['MYSQL_USER'];
+$DBuser = "root";
 $DBpass = $_ENV['MYSQL_ROOT_PASSWORD'];
 $pdo = null;
 $db_version = null;
@@ -11,7 +11,7 @@ try {
 
     $db_version = $pdo->query('SELECT VERSION()')->fetchColumn();
 } catch (PDOException $e) {
-    // nothing
+    echo $e->getMessage();
 }
 
 // Drop database connection
